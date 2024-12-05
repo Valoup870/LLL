@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Animal : MonoBehaviour
 {
-    private float hunger;
+    protected float hunger;
     public float hungerInterval = 8;
     private float hungerTime;
 
@@ -37,7 +37,7 @@ public class Animal : MonoBehaviour
         {
             hunger += 1;
             hungerTime = 0;
-            Debug.Log("Hunger: "+ hunger, this);
+            //Debug.Log("Hunger: "+ hunger, this);
         }
         if (hunger >= 100)
         {
@@ -56,7 +56,7 @@ public class Animal : MonoBehaviour
         {
             thirst += 1;
             thirstTime = 0;
-            Debug.Log("Thirst: " + thirst, this);
+            //Debug.Log("Thirst: " + thirst, this);
         }
         if (thirst >= 100)
         {
@@ -75,7 +75,7 @@ public class Animal : MonoBehaviour
         {
             ReproductiveUrge += 1;
             ReproductiveUrgeTime = 0;
-            Debug.Log("ReproductiveUrge: " + ReproductiveUrge, this);
+            //Debug.Log("ReproductiveUrge: " + ReproductiveUrge, this);
         }
         if (ReproductiveUrge >= 100)
         {
